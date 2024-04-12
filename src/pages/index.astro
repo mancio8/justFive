@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { SiteMetadata, getPosts } from '../config'
+import Base from '../layouts/base.astro'
+import Hero from '../components/hero.astro'
+import Features from '../components/features.astro'
+import FindOutMore from '../components/findoutmore.astro'
+import LatestArticles from '../components/latestarticles.astro'
+import CTA from '../components/cta.astro'
+import coverSVG from '../assets/svg/undraw/undraw_design_inspiration.svg'
+import socialImage from '../assets/undraw/undraw_design_inspiration.png'
+
+const frontmatter: CollectionEntry<'page'>['data'] = {
+  title: SiteMetadata.title,
+  description: SiteMetadata.description,
+  coverSVG: coverSVG,
+  socialImage: socialImage
+}
+
+const posts = await getPosts()
+---
+
+<Base frontmatter={frontmatter}>
+  <Hero />
+  <Features />
+  <FindOutMore />
+  <LatestArticles {posts} />
+  <CTA />
+  <div class='bg-white p-24 dark:bg-black md:p-12'></div>
+</Base>
