@@ -26,7 +26,7 @@ export default defineConfig({
     }
   },
   site: 'https://mancio8.github.io',
-  base: '/justFive/',
+  base: '/justFive',
   integrations: [icon(), tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
