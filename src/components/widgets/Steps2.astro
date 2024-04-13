@@ -41,12 +41,16 @@ const {
             <Fragment set:html={callToAction} />
           ) : (
             callToAction &&
-            callToAction.text &&
-            callToAction.href && (
-              <Button variant="primary" {...callToAction} class="mb-12 w-auto"/>
-            )
+            callToAction.text
+            
           )
+          
         }
+        <a
+        href="https://wa.me/+393501025358?text=Messaggio%20predefinito"
+        style="background-color: green; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;"
+        >WhatsApp</a
+      >
       </div>
     </div>
     <div class="w-full lg:w-1/2 px-0">

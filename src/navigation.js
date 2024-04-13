@@ -10,7 +10,7 @@ export const headerData = {
     },
     {
       text: 'Valori',
-      href: getPermalink('/landing/lead-generation'),
+      href: '/valori',
       
     },
     

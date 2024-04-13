@@ -1,15 +1,15 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import Prices from '~/components/widgets/Pricing.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import Prices from "~/components/widgets/Pricing.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
 import Steps2 from "~/components/widgets/Steps2.astro";
 
 const metadata = {
-  title: 'Pricing',
+  title: "Pricing",
 };
 ---
 
@@ -17,30 +17,24 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <Steps2
-    title="Reach out to us"
-    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
-    callToAction={{
-      text: "Contact us",
-      href: "/",
-    }}
+    title="I nostri contatti"
+    
+    
     items={[
       {
-        title: "Email us",
-        description: "contact@support.com",
+        title: "Email",
+        description: "justfivesrl@gmail.com",
         icon: "tabler:mail",
       },
       {
-        title: "Call us",
-        description: "+1 (234) 567-890",
-        icon: "tabler:headset",
+        title: "Whatsapp",
+        description: "+39 350 1025358",
+        icon: "tabler:brand-whatsapp",
       },
-      {
-        title: "Follow us",
-        description: "@example",
-        icon: "tabler:brand-twitter",
-      },
+      
     ]}
   />
+  
 
   <!-- Pricing Widget ******************* 
 
@@ -133,13 +127,9 @@ const metadata = {
 -->
   <!-- Features3 Widget ************** -->
 
- 
-
   <!-- Steps Widget ****************** -->
 
-
-
-  <!-- FAQs Widget ******************* -->
+  <!-- FAQs Widget ******************* 
 
   <FAQs
     title="Pricing FAQs"
@@ -147,34 +137,33 @@ const metadata = {
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: "Do the plans come with customer support?",
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          "Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.",
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: "Is there a trial period for the different plans?",
         description:
           "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
       },
       {
-        title: 'Can I switch between plans?',
+        title: "Can I switch between plans?",
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          "Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.",
       },
       {
-        title: 'What payment methods do you accept?',
+        title: "What payment methods do you accept?",
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          "We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.",
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: "Are there any hidden fees beyond the displayed cost?",
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          "No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.",
       },
     ]}
   />
+  -->
 
   <!-- CallToAction Widget *********** -->
-
-  
 </Layout>
