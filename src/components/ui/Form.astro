@@ -2,10 +2,10 @@
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
+const { inputs, textarea, disclaimer, button = 'Invia', description = '' } = Astro.props;
 ---
 
-<form>
+<form action="mailto:vincenzomancinelli@outlook.it?subject=Preventivo"" method="post" enctype="text/plain">
   {
     inputs &&
       inputs.map(
@@ -38,7 +38,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
         </label>
         <textarea
           id="textarea"
-          name={textarea.name ? textarea.name : 'message'}
+          name={textarea.name ? textarea.name : 'Messaggio'}
           rows={textarea.rows ? textarea.rows : 4}
           placeholder={textarea.placeholder}
           class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
