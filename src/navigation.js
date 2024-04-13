@@ -16,9 +16,12 @@ export const headerData = {
     
     {
       text: 'Contattaci',
-      href: '#',
+      href: '/contattaci',
     },
-    
+    {
+      text: 'Preventivo',
+      href: '/preventivo'
+    },
   ],
   
 };
