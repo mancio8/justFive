@@ -1,0 +1,165 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import Prices from "~/components/widgets/Pricing.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Steps2 from "~/components/widgets/Steps2.astro";
+
+
+---
+
+
+  <Steps2
+    title="I nostri contatti"
+    
+    
+    items={[
+      {
+        title: "Email",
+        description: "justfivesrl@gmail.com",
+        icon: "tabler:mail",
+      },
+      {
+        title: "Whatsapp",
+        description: "+39 350 1025358",
+        icon: "tabler:brand-whatsapp",
+      },
+      
+    ]}
+  />
+  
+
+  <!-- Pricing Widget ******************* 
+
+  <Prices
+    title="Our prices"
+    subtitle="Only pay for what you need"
+    prices={[
+      {
+        title: 'basic',
+        subtitle: 'Optimal choice for personal use',
+        price: 29,
+        period: 'per month',
+        items: [
+          {
+            description: 'Etiam in libero, et volutpat',
+          },
+          {
+            description: 'Aenean ac nunc dolor tristique',
+          },
+          {
+            description: 'Cras scelerisque accumsan lib',
+          },
+          {
+            description: 'In hac habitasse',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
+        },
+      },
+      {
+        title: 'standard',
+        subtitle: 'Optimal choice for small teams',
+        price: 69,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Proin vel laoreet',
+          },
+          {
+            description: 'Ut efficitur habitasse egestas',
+          },
+          {
+            description: 'Volutpat hac curabitur',
+          },
+          {
+            description: 'Pellentesque blandit ut nibh',
+          },
+          {
+            description: 'Donec fringilla sem',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'premium',
+        subtitle: 'Optimal choice for companies',
+        price: 199,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Curabitur suscipit risus',
+          },
+          {
+            description: 'Aliquam habitasse malesuada',
+          },
+          {
+            description: 'Suspendisse sit amet blandit',
+          },
+          {
+            description: 'Suspendisse auctor blandit dui',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
+        },
+      },
+    ]}
+  />
+-->
+  <!-- Features3 Widget ************** -->
+
+  <!-- Steps Widget ****************** -->
+
+  <!-- FAQs Widget ******************* 
+
+  <FAQs
+    title="Pricing FAQs"
+    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    columns={1}
+    items={[
+      {
+        title: "Do the plans come with customer support?",
+        description:
+          "Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.",
+      },
+      {
+        title: "Is there a trial period for the different plans?",
+        description:
+          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+      },
+      {
+        title: "Can I switch between plans?",
+        description:
+          "Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.",
+      },
+      {
+        title: "What payment methods do you accept?",
+        description:
+          "We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.",
+      },
+      {
+        title: "Are there any hidden fees beyond the displayed cost?",
+        description:
+          "No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.",
+      },
+    ]}
+  />
+  -->
+
+  <!-- CallToAction Widget *********** -->
+

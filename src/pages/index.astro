@@ -8,10 +8,10 @@ import Features2 from "~/components/widgets/Features2.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Content from "~/components/widgets/Content.astro";
 import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
-import FAQs from "~/components/widgets/FAQs.astro";
-import Stats from "~/components/widgets/Stats.astro";
-import CallToAction from "~/components/widgets/CallToAction.astro";
-
+import Preventivo from "~/components/widgets/preventivo.astro";
+import Contattaci from "~/components/widgets/contattaci.astro";
+import Servizi from "~/components/widgets/servizi.astro";
+import Valori from "~/components/widgets/valori.astro";
 const metadata = {
   title:
     "Just Five",
@@ -34,7 +34,7 @@ const metadata = {
       
     ]}
     image={{
-      src: "~/assets/images/home.jpeg",
+      src: "~/assets/images/just5.jpeg",
       alt: "AstroWind Hero Image",
     }}
   >
@@ -50,11 +50,17 @@ const metadata = {
       </Fragment
     >
   </Hero>
+  <Servizi></Servizi>
+  <Valori></Valori>
+  <Contattaci></Contattaci>
+  <Preventivo></Preventivo>
 </Layout>
 
 <!-- Note Widget ******************* -->
 
 <Note />
+
+
 
 <!-- Features Widget *************** 
 
