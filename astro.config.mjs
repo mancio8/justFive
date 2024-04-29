@@ -26,8 +26,8 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-  site: 'https://mancio8.github.io',
-  base: 'justFive',
+  site: 'https://justfivesrl.it/',
+  base: '',
   integrations: [
     tailwind({
       applyBaseStyles: false,
